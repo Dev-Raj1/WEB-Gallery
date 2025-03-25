@@ -1,0 +1,50 @@
+#createContainer{
+    text-align: center;
+}
+
+#createContainer > form {
+    border: 1px solid black;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: bisque;
+    width: 30%;
+}
+#createContainer input {
+    border-radius: 5px;
+    border: blue 1px solid;
+    color: blue;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 2rem;
+    font-size: larger;
+}
+#createContainer label {
+   font-weight: bold;
+    font-size: larger;
+}
+#submitBtn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+  }
+  
+  /* Hover effect */
+  #submitBtn:hover {
+    background-color: #45a049; /* Darker green */
+    transform: scale(1.05); /* Slight zoom */
+  }
+  
+  /* Active effect */
+  #submitBtn:active {
+    background-color: #3e8e41;
+    transform: scale(0.95); /* Slight shrink on click */
+  }

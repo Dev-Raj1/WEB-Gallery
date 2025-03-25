@@ -1,0 +1,21 @@
+#product_container {
+    text-align: center;
+    border: 1px solid black;
+    width: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 15px; 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1), 0 4px 10px rgba(0, 0, 0, 0.05); /* Multi-layer shadow for depth */
+    background: linear-gradient(145deg, #f8f9fa, #e2e2e2); /* Soft gradient for extra modern touch */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease; /* Smooth hover transition */
+}
+
+#product_container:hover {
+    transform: translateY(-5px); /* Slight lift on hover for interactive feel */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow on hover */
+}
+
+
+#image{
+    width: 15rem;
+}

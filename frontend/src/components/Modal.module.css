@@ -1,0 +1,76 @@
+/* Modal wrapper */
+.modalWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modalOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  /* Hidden checkbox that controls modal visibility */
+  .modalToggle:checked + .modalOverlay {
+    display: none; /* Hides overlay when checked */
+  }
+  
+  .modalContainer {
+    background-color: #dbcece;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    width: 25%;
+    z-index: 2; /* Ensures modal is above the overlay */
+  }
+  
+  /* Form labels and inputs */
+  .modalContainer label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  .modalContainer input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .modalContainer button {
+    padding: 0.7rem 1.5rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .modalContainer button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Modal toggle behavior - show modal */
+  .modalToggle:checked + .modalOverlay + .modalContainer {
+    display: block;
+  }
+  
