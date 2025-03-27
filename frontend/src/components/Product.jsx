@@ -61,6 +61,7 @@ function Product({ newProduct, showActions }) {
         items.map((item) => (
           <ProductCard
             key={item._id}
+            id={item._id}
             title={item.name}
             imgURL={item.image}
             price={item.price}

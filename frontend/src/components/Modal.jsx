@@ -4,7 +4,7 @@ import Styles from "./Modal.module.css";
 
 const Modal = ({ product, onSubmit, onClose }) => {
   const [updatedProduct, setUpdatedProduct] = useState({
-    _id: product._id, // Include the product ID for updates
+    id: product._id, // Include the product ID for updates
     name: product.title,
     price: product.price,
     image: product.imgURL,

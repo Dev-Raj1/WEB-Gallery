@@ -2,14 +2,15 @@ import React, { useState } from "react";
 import Styles from "../components/ProductCard.module.css";
 import Modal from "./Modal";
 
-const ProductCard = ({ title, price, imgURL, actions = false, onRemove, onUpdate }) => {
+const ProductCard = ({ id, title, price, imgURL, actions = false, onRemove, onUpdate }) => {
   const [showUpdateModal, setUpdateModal] = useState(false);
 
   const handleUpdate = () => {
     setUpdateModal(!showUpdateModal);
+    
   };
 
-  const handleModalSubmit = (updatedProduct) => {
+  const handleModalSubmit = ( updatedProduct) => {
     onUpdate(updatedProduct); // Pass the updated product to the parent
     setUpdateModal(false); // Close the modal
   };
